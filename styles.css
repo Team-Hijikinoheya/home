@@ -1,0 +1,74 @@
+/* 全体の基本スタイル */
+body {
+    font-family: Arial, sans-serif; /* フォントファミリーの設定 */
+    margin: 0; /* ページ全体のマージンを削除 */
+    padding: 0; /* ページ全体のパディングを削除 */
+    background-color: #f9f9f9; /* 背景色の設定 */
+    color: #333; /* テキストの色 */
+    min-height: 100vh; /* ビューポート全体の高さを確保 */
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦方向に並べる */
+}
+
+/* コンテナのスタイル */
+.container {
+    width: 80%; /* コンテナの幅 */
+    margin: 0 auto; /* コンテナを中央に配置 */
+    padding: 20px; /* コンテナの内側の余白 */
+}
+
+/* メインセクションのスタイル */
+main {
+    flex: 1; /* メインセクションが余白を占めるようにする */
+    padding: 40px 0; /* メインセクションの上下の余白 */
+}
+
+/* メインセクションの見出し */
+main h2 {
+    margin-top: 0; /* 上部のマージンを削除 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+/* リストの基本スタイル */
+ul {
+    list-style-type: none; /* リストのマーカーを削除 */
+    padding: 0; /* リストの内側のパディングを削除 */
+}
+
+/* リストアイテムのスタイル */
+ul li {
+    background-color: #fff; /* リストアイテムの背景色 */
+    margin: 10px 0; /* 上下のマージン */
+    padding: 15px; /* 内側の余白 */
+    border-radius: 5px; /* 角を丸くする */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* シャドウの追加 */
+}
+
+/* リストアイテム内のリンク */
+ul li a {
+    color: #4CAF50; /* リンクの色 */
+    text-decoration: none; /* 下線を削除 */
+    font-size: 1.2em; /* フォントサイズ */
+}
+
+/* リストアイテム内のリンクホバー時のスタイル */
+ul li a:hover {
+    text-decoration: underline; /* ホバー時に下線を追加 */
+}
+
+/* ボタンのスタイル */
+.btn {
+    display: inline-block; /* インラインブロックで表示 */
+    padding: 10px 20px; /* 内側の余白 */
+    background-color: #4CAF50; /* 背景色 */
+    color: #fff; /* テキストの色 */
+    text-decoration: none; /* 下線を削除 */
+    border-radius: 5px; /* 角を丸くする */
+    font-size: 1em; /* フォントサイズ */
+    transition: background-color 0.3s; /* 背景色変更のアニメーション */
+}
+
+/* ボタンホバー時のスタイル */
+.btn:hover {
+    background-color: #45a049; /* ホバー時の背景色 */
+}
