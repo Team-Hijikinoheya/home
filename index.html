@@ -3,45 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team-Hijikinoheya</title>
+    <title>Team Hijikinoheya</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="animation.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="btn-home">ホームに戻る</a>
-        <h1>Team-Hijikinoheya</h1>
-        <nav>
-            <ul class="dropdown-menu">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">メニュー</a>
-                    <ul class="dropdown-content">
-                        <li><a href="./links.html">ソフトウェア</a></li>
-                        <li><a href="./contact.html">お問い合わせ</a></li>
-                        <li><a href="./about.html">このチームについて</a></li>
-                        <li><a href="./social-links.html">リンク</a></li>
-                    </ul>
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Team Hijikinoheya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">チーム情報</a></li>
+                <li class="nav-item"><a class="nav-link" href="social-links.html">関連リンク</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">コンタクト</a></li>
+                <li class="nav-item"><a class="nav-link" href="links.html">アプリ一覧</a></li>
+                <li class="nav-item active"><a class="nav-link" href="news.html">ニュース</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <h2>Welcome to Team-Hijikinoheya</h2>
-            <section id="about">
-                <div class="container">
-                    <h2>私たちについて</h2>
-                    <p>Team-Hijikinoheyaは、主にアプリ開発を行っています。</p>
-                    <p><a href="links.html" class="btn">公開ソフトウェア一覧はこちら</a></p>
-                </div>
-            </section>
         </div>
-    </main>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="animate__animated animate__fadeIn">
+            <h1>ようこそ、Team Hijikinoheyaへ</h1>
+            <p>個人アプリ開発チーム</p>
+        </section>
+
+        <section id="about" class="animate__animated animate__fadeIn">
+            <h2>チーム情報</h2>
+            <p>会社の詳細な情報をここに記載します。</p>
+        </section>
+
+        <section id="links" class="animate__animated animate__fadeIn">
+            <h2>関連リンク</h2>
+            <ul>
+                <li><a href="https://x.com/hijikinoheya">X（旧Twitter）</a></li>
+                <li><a href="https://www.youtube.com/@hijikinoheya">YouTube</a></li>
+                <li><a href="https://www.instagram.com/hijikinoheya/">Instagram</a></li>
+                <li><a href="https://hijikinoheya.github.io/">公式サイト</a></li>
+                <li><a href="https://www.vector.co.jp/vpack/browse/person/an063174.html">Vector</a></li>
+                <li><a href="https://github.com/Hijikinoheya">GitHub（個人）</a></li>
+                <li><a href="https://github.com/Team-Hijikinoheya">GitHub（チーム）</a></li>
+            </ul>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2024 Team-Hijikinoheya</p>
+        <div class="container">
+            <ul>
+                <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+                <li><a href="terms-of-service.html">利用規約</a></li>
+            </ul>
+            <p>🄫 By 2024 Hijikinoheya. All Rights Reserved.</p>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-

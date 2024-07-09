@@ -1,74 +1,152 @@
-/* 全体の基本スタイル */
 body {
-    font-family: Arial, sans-serif; /* フォントファミリーの設定 */
-    margin: 0; /* ページ全体のマージンを削除 */
-    padding: 0; /* ページ全体のパディングを削除 */
-    background-color: #f9f9f9; /* 背景色の設定 */
-    color: #333; /* テキストの色 */
-    min-height: 100vh; /* ビューポート全体の高さを確保 */
-    display: flex; /* フレックスボックスを使用 */
-    flex-direction: column; /* 縦方向に並べる */
+    font-family: 'Arial', sans-serif;
 }
 
-/* コンテナのスタイル */
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .container {
-    width: 80%; /* コンテナの幅 */
-    margin: 0 auto; /* コンテナを中央に配置 */
-    padding: 20px; /* コンテナの内側の余白 */
+    margin-top: 3rem;
 }
 
-/* メインセクションのスタイル */
+.animate__animated.animate__fadeInUp {
+    animation-duration: 1s;
+}
+
+.animate__animated.animate__fadeIn {
+    animation-duration: 1.5s;
+}
+
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* メインコンテンツのスタイル */
 main {
-    flex: 1; /* メインセクションが余白を占めるようにする */
-    padding: 40px 0; /* メインセクションの上下の余白 */
+    padding: 20px;
+    margin-top: 60px; /* ヘッダーの高さを考慮 */
 }
 
-/* メインセクションの見出し */
-main h2 {
-    margin-top: 0; /* 上部のマージンを削除 */
-    text-align: center; /* テキストを中央揃え */
+/* フッターのスタイル */
+footer {
+    background: #333; /* 背景色をダークグレーに設定 */
+    color: #fff; /* テキスト色を白に設定 */
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-/* リストの基本スタイル */
-ul {
-    list-style-type: none; /* リストのマーカーを削除 */
-    padding: 0; /* リストの内側のパディングを削除 */
+footer .container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-/* リストアイテムのスタイル */
-ul li {
-    background-color: #fff; /* リストアイテムの背景色 */
-    margin: 10px 0; /* 上下のマージン */
-    padding: 15px; /* 内側の余白 */
-    border-radius: 5px; /* 角を丸くする */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* シャドウの追加 */
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-/* リストアイテム内のリンク */
-ul li a {
-    color: #4CAF50; /* リンクの色 */
-    text-decoration: none; /* 下線を削除 */
-    font-size: 1.2em; /* フォントサイズ */
+footer ul li {
+    margin: 0 10px;
 }
 
-/* リストアイテム内のリンクホバー時のスタイル */
-ul li a:hover {
-    text-decoration: underline; /* ホバー時に下線を追加 */
+footer ul li a {
+    color: #fff; /* リンクの色を白に設定 */
+    text-decoration: none;
 }
 
-/* ボタンのスタイル */
-.btn {
-    display: inline-block; /* インラインブロックで表示 */
-    padding: 10px 20px; /* 内側の余白 */
-    background-color: #4CAF50; /* 背景色 */
-    color: #fff; /* テキストの色 */
-    text-decoration: none; /* 下線を削除 */
-    border-radius: 5px; /* 角を丸くする */
-    font-size: 1em; /* フォントサイズ */
-    transition: background-color 0.3s; /* 背景色変更のアニメーション */
+footer ul li a:hover {
+    text-decoration: underline;
 }
 
-/* ボタンホバー時のスタイル */
-.btn:hover {
-    background-color: #45a049; /* ホバー時の背景色 */
+footer p {
+    margin: 10px 0 0;
+    font-size: 0.9em; /* フッターのテキストサイズを少し小さく設定 */
+}
+
+/* メディアクエリ */
+@media (max-width: 768px) {
+    header .container, footer .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
 }

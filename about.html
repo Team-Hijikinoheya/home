@@ -3,44 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>このチームについて | Team-Hijikinoheya</title>
+    <title>会社情報 - Team Hijikinoheya</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mail.css"> <!-- mail.cssを使う場合はここに追加 -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="animation.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="btn-home">ホームに戻る</a>
-        <div class="container">
-            <h1>このチームについて</h1>
-            <nav>
-                <ul class="dropdown-menu">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">メニュー</a>
-                        <ul class="dropdown-content">
-                            <li><a href="./links.html">ソフトウェア</a></li>
-                            <li><a href="./contact.html">お問い合わせ</a></li>
-                            <li><a href="./about.html">このチームについて</a></li>
-                            <li><a href="./social-links.html">リンク</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Team Hijikinoheya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">チーム情報</a></li>
+                <li class="nav-item"><a class="nav-link" href="social-links.html">関連リンク</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">コンタクト</a></li>
+                <li class="nav-item"><a class="nav-link" href="links.html">アプリ一覧</a></li>
+                <li class="nav-item active"><a class="nav-link" href="news.html">ニュース</a></li>
+            </ul>
         </div>
-    </header>
-    <main>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="animate__animated animate__fadeInUp text-center mb-4">会社情報</h2>
+        <div class="animate__animated animate__fadeIn">
+            <h3>チーム概要</h3>
+            <p>Team-Hijikinoheyaは、主にアプリ開発を専門とするチームです。私たちは、日常生活やビジネスに役立つツールやユーティリティを作成し、プログラミングの楽しさと利便性を広めることを目指しています。</p>
+            
+            <h3>主な取り扱い言語</h3>
+            <ul>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>C++(ほんの少し)</li>
+                <li>Java(ほんの少し)</li>
+            </ul>
+            
+            <h3>提供するソフトウェア</h3>
+            <p>Team-Hijikinoheyaは、さまざまなプラットフォーム向けに多くのソフトウェアを開発しています。私たちのソフトウェアはシンプルで使いやすく、ユーザーのニーズに応えることを目標としています。</p>
+            <p><a href="links.html">詳細なソフトウェアリストについては、こちらをご覧ください。</a></p>
+            
+            <h3>チームについて</h3>
+            <p>プログラミングエンジニアとして、私たちは日々新しい技術に挑戦し、より良いアプリケーションを作るために努力しています。私たちの目標は、プログラミングを通じて人々の生活をより便利に、より楽しくすることです。</p>
+            
+            <h3>お問い合わせ</h3>
+            <p>詳細な情報やお問い合わせについては、<a href="mailto:hijikinoheya@gmail.com">hijikinoheya@gmail.com</a> に直接ご連絡ください。</p>
+            
+            <h3>歴史</h3>
+            <p>Team Hijikinoheyaは2021年に設立され、以来、チームでアプリ開発を行っています。</p>
+            <p>今年に入ってから、アプリを公開し始めました。</p>
+        </div>
         <div class="container">
-            <h2>自己紹介</h2>
+            <h2>作者自己紹介</h2>
             <p>初めまして、プログラミングエンジニアの私です。</p>
             <p>まあ、プログラミングエンジニアと言っていますが、実際にはいろいろなアプリを作って遊んでいます。作るアプリはほとんどが趣味のもので、簡単なツールやユーティリティが多いです。</p>
             <p>私の主な興味は、様々なプログラミング言語を使って新しいことに挑戦することです。時には、仕事や生活で便利なツールを作ったり、時には単に楽しむために試行錯誤しています。</p>
             <p>プログラミングにおける経験や学びを通じて、より良いアプリケーションを作るために日々努力しています。もし興味があれば、ぜひ作成したソフトウェアやプロジェクトを見てみてください。</p>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Team-Hijikinoheya</p>
-    </footer>
-    <script src="scripts.js"></script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+            <li><a href="terms-of-service.html">利用規約</a></li>
+        </ul>
+        <p>🄫 By 2024 Hijikinoheya. All Rights Reserved.</p>
+    </div>
+</footer>
 </html>
+
+
